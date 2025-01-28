@@ -1,0 +1,33 @@
+Abraham R. Flores 
+1/27/2025
+INTRODUCTION TO OMP TARGET OFFLOAD
+
+1. hello_world.f90
+  -- what does host device model mean?
+ 
+2. offload_loop1.f90
+  -- split up a loop on a gpu
+
+3. offload_loop2.f90
+  -- offload with device routines
+
+4. offload_loop3.f90
+  -- offload with arrays
+
+5. offload_loop4.f90
+  -- offload with a derivied type that has allocatable compenents
+
+6. hello_world2.f90
+  -- MPI + omp target offload
+
+7. offload_loop5.f90
+  -- all of the above
+
+compiling
+  ./install.sh
+
+***modify as needed 
+
+running
+  hw + off1-4.x : ./name.x > output
+  hw2 / off5.x : mpirun -np {comm_size} ./name.x > output
